@@ -1,13 +1,11 @@
 /** @jsx jsx */
-import { jsx, Heading, Text, Button, Box, Divider } from 'theme-ui';
-import { useColorMode, useThemeUI } from 'theme-ui';
-import { Tiles } from '../components/blocks';
-import { CgDarkMode } from 'react-icons/cg';
-import { FaLinkedin as Linkedin, FaGithub as GitHub } from 'react-icons/fa';
-
+import { jsx, Button, Divider } from 'theme-ui';
+import { Footer, Header, Tiles } from '../components';
+import Link from 'next/link';
 const projects = [
   {
     title: 'Dinify',
+    link: '/project/dinify',
     tags: ['Typescript', 'React Native Web', 'RxJS', 'NestJS'],
     description:
       'Smart dining platform for restaurants and their international guests',
@@ -20,7 +18,7 @@ const projects = [
   },
   {
     title: 'Rosso.solutions',
-    link: 'https://rosso.solutions',
+    link: '/',
     tags: ['React', 'Rematch', 'SVG', 'MongoDB'],
     description: 'Platform for no-code development',
   },
@@ -74,7 +72,7 @@ const Tags = ({ item }) => {
               backgroundColor: 'muted',
             },
           }}
-          key={`tag-${item.title}-${item.tag}`}
+          key={`tag-${item.title}-${tag}`}
         >
           {tag}
         </Button>
@@ -84,44 +82,9 @@ const Tags = ({ item }) => {
 };
 
 export default () => {
-  const [colorMode, setColorMode] = useColorMode();
-  const { theme } = useThemeUI();
-  console.log(theme);
   return (
     <div sx={{ variant: 'styles' }}>
-      <header
-        sx={{
-          variant: 'styles.container',
-          display: 'flex',
-        }}
-      >
-        <div>
-          {' '}
-          <h1>Lukas Vanek</h1>
-          <p>full-stack developer, idea maker, data science enthusiast</p>
-        </div>
-
-        <div sx={{ mx: 'auto' }} />
-        <Button
-          sx={{
-            alignSelf: 'end',
-            backgroundColor: 'transparent',
-            color: colorMode === 'default' ? 'black' : 'white',
-            fontSize: '32px',
-            p: 0,
-            m: 2,
-            ':hover': {
-              backgroundColor: 'transparent',
-            },
-          }}
-          onClick={() =>
-            setColorMode(colorMode === 'default' ? 'dark' : 'default')
-          }
-        >
-          <CgDarkMode />
-        </Button>
-      </header>
-
+      <Header />
       <main
         sx={{
           variant: 'styles.container',
@@ -135,7 +98,9 @@ export default () => {
             {projects.map((item) => (
               <li key={`tile-${item.title}`}>
                 <h2>
-                  <a href={item.link}>{item.title}</a>
+                  <Link href={item.link || '/'}>
+                    <a>{item.title}</a>
+                  </Link>
                 </h2>
                 <Tags item={item} />
                 {item.description}
@@ -163,55 +128,8 @@ export default () => {
 
         <Divider />
       </main>
-      <footer
-        sx={{
-          p: 2,
-          variant: 'styles.container',
-        }}
-      >
-        <div
-          sx={{
-            py: 4,
-            display: 'flex',
-            justifyContent: 'center',
-          }}
-        >
-          <a
-            href="https://www.linkedin.com/in/vaneklukas/"
-            title="Linkedin"
-            sx={{
-              variant: 'styles.navitem',
-              mr: 3,
-            }}
-          >
-            <Linkedin size={24} />
-          </a>
-          <a
-            href="https://github.com/lukasvanek"
-            title="GitHub"
-            sx={{
-              variant: 'styles.navitem',
-              mr: 3,
-            }}
-          >
-            <GitHub size={24} />
-          </a>
-        </div>
 
-        <div
-          sx={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            alignItems: 'center',
-            fontSize: 0,
-          }}
-        >
-          <div sx={{ mx: 'auto' }} />
-          <div sx={{ p: 2, color: 'muted2' }}>
-            © {new Date().getFullYear()} Lukas Vanek
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

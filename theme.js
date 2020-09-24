@@ -104,6 +104,10 @@ const theme = {
     container: {
       px: [3, 5],
     },
+    a: {
+      color: 'text',
+      textDecoration: 'none',
+    },
     h1: {
       color: 'text',
       fontFamily: 'heading',
