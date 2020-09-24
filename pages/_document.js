@@ -31,16 +31,9 @@ export default class extends Document {
         <Head />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{title}</title>
-        <link
-          rel="icon"
-          type="image/png"
-          href="https://jxnblk.com/favicon.png"
-        />
-        <link
-          rel="apple-touch-icon-precomposed"
-          href="https://jxnblk.com/avatar.png"
-        />
-        <meta name="og:image" content="https://jxnblk.com/avatar.png" />
+        <link rel="icon" type="image/png" href="/LV32.png" />
+        <link rel="apple-touch-icon-precomposed" href="/LV256.png" />
+        <meta name="og:image" content="/LV512.png" />
         <meta name="og:title" content={title} />
         <meta name="og:description" content={description} />
         <body>
