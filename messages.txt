@@ -1,0 +1,59 @@
+STRV
+
+First of all, I really like how STRV approaches its company culture and activities like meetups and workshops ❤️
+
+I have 5+ years experience with frontend development, nowadays I'm fully committed to React and its ecosystem, but on my developer path I've also worked with PHP (Nette), Angular, NodeJS, NestJS, GraphQL with Apollo, C#, databases MySQL, MongoDB, Redis, Elasticsearch, Neo4j and InfluxDB. And the list could go on.
+
+I started my career with my own startup idea and stayed in startup environment until now, so I can fully understand the need of iterating the product with quick delivery as well as need for reliability of the product achieved by testing and QA.
+
+As I described I worked with many different technologies and I'm 
+constantly learning new cutting edge libraries and patterns. More you can find in attached CV.
+
+Looking forward to answering your questions and working in STRV :)
+
+
+
+PrimeHammer
+
+Dlouhodobě se zajímám o finanční trhy a mám víc než 5 let zkušeností s frontend developmentem. Navíc jsem se za tu dobu setkal a pracoval s PHP (Nette), Angular, NodeJS, NestJS, GraphQL Apollo, C#, databáze MySQL, MongoDB, Redis, Elasticsearch, Neo4j a InfluxDB. A mohl bych pokračovat :)
+
+Svou kariéru jsem začal vlastním startup nápadem a celou dobu se pohybuju v startupovém prostředí. Takže plně chápu nutnost rychle iterovat při vývoji MVP a stejně tak následnou potřebu spolehlivosti dosaženou QA a testováním.
+
+Jak jsem už popsal, dostal jsem se k mnoha technologiím a konstantně se učím nové knihovny a design patterny. Už prakticky nečtu nic jiného než Medium a Hackernoon :D
+Víc v přiloženém CV.
+
+Potkali jsem se před lety na jednom Javascript meetupu a byli jste celkem fajn, takže se moc těším na spolupráci :)
+Jsem z Brna a můžu nastoupit okamžitě.
+
+
+
+
+Kiwi
+
+First of all, I really like how Kiwi approaches its company culture and activities like meetups and workshops.
+
+I have 5+ years experience with frontend development, nowadays I'm fully committed to React and its ecosystem, but on my developer path I've also worked with PHP (Nette), Angular, NodeJS, NestJS, GraphQL with Apollo, C#, databases MySQL, MongoDB, Redis, Elasticsearch, Neo4j and InfluxDB. And the list could go on.
+
+I started my career with my own startup idea and stayed in startup environment until now, so I can fully understand the need of iterating the product with quick delivery as well as need for reliability of the product achieved by testing and QA.
+During an acceletation program with my startup I even consulted some technical topics with coach and technical advisor of Kiwi in your offices in Brno.
+
+As I described I worked with many different technologies and I'm 
+constantly learning new cutting edge libraries and patterns. More you can find in attached CV.
+
+Looking forward to answering your questions and working in Kiwi :)
+
+
+
+
+
+Neutral 
+
+Mám už víc než 5 let zkušeností s frontend developmentem. Navíc jsem se za tu dobu setkal a pracoval s PHP (Nette), Angular, NodeJS, NestJS, GraphQL Apollo, C#, databáze MySQL, MongoDB, Redis, Elasticsearch, Neo4j a InfluxDB. A mohl bych pokračovat :)
+
+Svou kariéru jsem začal vlastním startup nápadem a celou dobu se pohybuju v startupovém prostředí. Takže plně chápu nutnost rychle iterovat při vývoji MVP a stejně tak následnou potřebu spolehlivosti dosaženou QA a testováním.
+
+Jak jsem už popsal, dostal jsem se k mnoha technologiím a konstantně se učím nové knihovny a design patterny. Už prakticky nečtu nic jiného než Medium a Hackernoon.
+Víc v přiloženém CV.
+
+Rád zodpovím další otázky a těším se na případnou spolupráci :)
+Můžu nastoupit okamžitě.

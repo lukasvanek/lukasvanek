@@ -1,0 +1,21 @@
+{
+  "name": "lukasvanek",
+  "version": "1.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "@theme-ui/color": "^0.3.1",
+    "@theme-ui/preset-base": "^0.3.0",
+    "next": "9.3.5",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^3.11.0",
+    "theme-ui": "^0.4.0-rc.5"
+  }
+}
