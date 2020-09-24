@@ -2,9 +2,15 @@
 import { jsx, Button, useColorMode } from 'theme-ui';
 import Link from 'next/link';
 import { CgDarkMode } from 'react-icons/cg';
+import { useRouter } from 'next/router';
 
-const Header = ({ minimal = false }) => {
+const Header = () => {
   const [colorMode, setColorMode] = useColorMode();
+  const router = useRouter();
+  let minimal = true;
+  if (router.pathname === '/') {
+    minimal = false;
+  }
   return (
     <header
       sx={{
@@ -16,7 +22,22 @@ const Header = ({ minimal = false }) => {
         {' '}
         <h1>
           <Link href="/">
-            <a>{minimal ? 'LV' : 'Lukas Vanek'}</a>
+            <a
+              sx={{
+                fontWeight: 'heading',
+                cursor: 'pointer',
+                div: {
+                  display: 'inline-block',
+                  overflow: 'hidden',
+                  transition: 'all 0.45s ease-in-out',
+                  verticalAlign: 'bottom',
+                  opacity: minimal ? '0' : '1',
+                },
+              }}
+            >
+              L<div style={{ width: minimal ? '0' : '70px' }}>ukas</div> V
+              <div style={{ width: minimal ? '0' : '75px' }}>anek</div>
+            </a>
           </Link>
         </h1>
         {!minimal && (

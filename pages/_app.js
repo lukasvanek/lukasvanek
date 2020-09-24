@@ -2,7 +2,7 @@ import * as React from 'react';
 import NextApp from 'next/app';
 import { ThemeProvider } from 'theme-ui';
 import theme from '../theme';
-import Head from 'next/head';
+import { Header } from '../components';
 
 export default class App extends NextApp {
   render() {
@@ -11,6 +11,7 @@ export default class App extends NextApp {
     // <link rel="canonical" href={props.location.href} />
     return (
       <ThemeProvider theme={theme}>
+        <Header />
         <Component {...pageProps} />
       </ThemeProvider>
     );

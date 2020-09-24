@@ -1,7 +1,8 @@
 /** @jsx jsx */
 import { jsx, Button, Divider } from 'theme-ui';
-import { Footer, Header, Tiles } from '../components';
+import { Footer, Tiles } from '../components';
 import Link from 'next/link';
+
 const projects = [
   {
     title: 'Dinify',
@@ -12,6 +13,7 @@ const projects = [
   },
   {
     title: 'Dinify Growth Hacking',
+    link: '/project/dinify-campaign',
     tags: ['Scraping', 'MongoDB'],
     description:
       'Using TripAdvisor platform to target our clients in onboarding campaign',
@@ -84,7 +86,6 @@ const Tags = ({ item }) => {
 export default () => {
   return (
     <div sx={{ variant: 'styles' }}>
-      <Header />
       <main
         sx={{
           variant: 'styles.container',
