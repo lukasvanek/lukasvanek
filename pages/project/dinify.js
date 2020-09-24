@@ -56,6 +56,30 @@ export default () => {
           tried to adapt to different market once again, the restaurants of
           Seoul.
         </p>
+
+        <blockquote className="twitter-tweet">
+          <p lang="en" dir="ltr">
+            DINIFY - the winner of the First Global Gastronomy Tourism Startup
+            Competition! 🏆🎗️🥇
+            <br />
+            Congratulations! 🎉🎉🎉
+            <a href="https://twitter.com/pololikashvili?ref_src=twsrc%5Etfw">
+              @pololikashvili
+            </a>
+            <a href="https://twitter.com/JMAizega?ref_src=twsrc%5Etfw">
+              @JMAizega
+            </a>
+            <a href="https://twitter.com/bculinary?ref_src=twsrc%5Etfw">
+              @bculinary
+            </a>
+            <a href="https://t.co/zvZPvLsOKH">pic.twitter.com/zvZPvLsOKH</a>
+          </p>
+          &mdash; World Tourism Organization (@UNWTO)
+          <a href="https://twitter.com/UNWTO/status/1124282805427605505?ref_src=twsrc%5Etfw">
+            May 3, 2019
+          </a>
+        </blockquote>
+
         <h3>My role</h3>
         <p>
           The first thing I was working on was developing web app for waiters,
