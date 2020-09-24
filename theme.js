@@ -9,6 +9,7 @@ const theme = {
     secondary: '#c0c',
     highlight: '#e0e',
     muted: '#f6f6ff',
+    muted2: '#ccd',
     modes: {
       dark: {
         text: '#fff',
@@ -17,6 +18,7 @@ const theme = {
         secondary: '#0cf',
         highlight: '#f0c',
         muted: '#223',
+        muted2: '#556',
       },
     },
   },
