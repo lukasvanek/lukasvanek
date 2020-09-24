@@ -6,9 +6,9 @@ import { useRouter } from 'next/router';
 
 const Header = () => {
   const [colorMode, setColorMode] = useColorMode();
-  const router = useRouter();
+  const { pathname } = useRouter();
   let minimal = true;
-  if (router.pathname === '/') {
+  if (pathname === '/') {
     minimal = false;
   }
   return (

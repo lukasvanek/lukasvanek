@@ -19,13 +19,14 @@ const projects = [
       'Using TripAdvisor platform to target our clients in onboarding campaign',
   },
   {
-    title: 'Rosso.solutions',
-    link: '/',
+    title: 'Rosso Solutions',
+    link: '/project/rosso',
     tags: ['React', 'Rematch', 'SVG', 'MongoDB'],
     description: 'Platform for no-code development',
   },
   {
     title: 'Sinesquare',
+    link: '/project/sinesquare',
     tags: ['React', 'PHP', 'Nette', 'Angular', 'Redux', 'RxJS', 'MongoDB'],
     description: 'Connecting people with similar taste in music',
   },
