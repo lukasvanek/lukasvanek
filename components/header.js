@@ -3,7 +3,7 @@ import { jsx, Button, useColorMode } from 'theme-ui';
 import Link from 'next/link';
 import { CgDarkMode } from 'react-icons/cg';
 
-const Header = () => {
+const Header = ({ minimal = false }) => {
   const [colorMode, setColorMode] = useColorMode();
   return (
     <header
@@ -16,10 +16,12 @@ const Header = () => {
         {' '}
         <h1>
           <Link href="/">
-            <a>Lukas Vanek</a>
+            <a>{minimal ? 'LV' : 'Lukas Vanek'}</a>
           </Link>
         </h1>
-        <p>full-stack developer, idea maker, data science enthusiast</p>
+        {!minimal && (
+          <p>full-stack developer, idea maker, data science enthusiast</p>
+        )}
       </div>
 
       <div sx={{ mx: 'auto' }} />
