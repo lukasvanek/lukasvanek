@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 /** @jsx jsx */
 import { jsx, Button, Divider } from 'theme-ui';
-import { Footer } from '../../components';
 
 export default () => {
   return (
@@ -29,8 +28,6 @@ export default () => {
 
         <Divider />
       </main>
-
-      <Footer />
     </div>
   );
 };

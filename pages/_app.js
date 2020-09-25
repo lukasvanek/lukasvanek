@@ -2,7 +2,7 @@ import * as React from 'react';
 import NextApp from 'next/app';
 import { ThemeProvider } from 'theme-ui';
 import theme from '../theme';
-import { Header } from '../components';
+import { Header, Footer } from '../components';
 
 export default class App extends NextApp {
   render() {
@@ -13,6 +13,7 @@ export default class App extends NextApp {
       <ThemeProvider theme={theme}>
         <Header />
         <Component {...pageProps} />
+        <Footer />
       </ThemeProvider>
     );
   }

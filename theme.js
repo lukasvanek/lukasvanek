@@ -4,16 +4,16 @@ const theme = {
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   colors: {
     text: '#000',
-    background: '#fff',
+    background: '#f7f7f7',
     primary: '#11e',
     secondary: '#c0c',
     highlight: '#e0e',
-    muted: '#f6f6ff',
+    muted: '#e5e5e5',
     muted2: '#ccd',
     modes: {
       dark: {
         text: '#fff',
-        background: '#000',
+        background: '#111517',
         primary: '#0fc',
         secondary: '#0cf',
         highlight: '#f0c',

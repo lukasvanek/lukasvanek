@@ -29,7 +29,7 @@ const Header = () => {
                 div: {
                   display: 'inline-block',
                   overflow: 'hidden',
-                  transition: 'all 0.45s ease-in-out',
+                  transition: 'all 0.3s ease',
                   verticalAlign: 'bottom',
                   opacity: minimal ? '0' : '1',
                 },

@@ -2,6 +2,7 @@
 import { jsx, Button, Divider } from 'theme-ui';
 import { Footer, Tiles } from '../components';
 import Link from 'next/link';
+import Fade from 'react-reveal/Fade';
 
 const projects = [
   {
@@ -96,42 +97,44 @@ export default () => {
 
         <h2>Projects</h2>
         <Tiles>
-          <ul>
-            {projects.map((item) => (
-              <li key={`tile-${item.title}`}>
-                <h2>
-                  <Link href={item.link || '/'}>
-                    <a>{item.title}</a>
-                  </Link>
-                </h2>
-                <Tags item={item} />
-                {item.description}
-              </li>
-            ))}
-          </ul>
+          <Fade>
+            <ul>
+              {projects.map((item) => (
+                <li key={`tile-${item.title}`}>
+                  <h2>
+                    <Link href={item.link || '/'}>
+                      <a>{item.title}</a>
+                    </Link>
+                  </h2>
+                  <Tags item={item} />
+                  {item.description}
+                </li>
+              ))}
+            </ul>
+          </Fade>
         </Tiles>
 
         <Divider />
 
         <h2>Experiments</h2>
         <Tiles>
-          <ul>
-            {experiments.map((item) => (
-              <li key={`tile-${item.title}`}>
-                <h2>
-                  <a href={item.link}>{item.title}</a>
-                </h2>
-                <Tags item={item} />
-                {item.description}
-              </li>
-            ))}
-          </ul>
+          <Fade>
+            <ul>
+              {experiments.map((item) => (
+                <li key={`tile-${item.title}`}>
+                  <h2>
+                    <a href={item.link}>{item.title}</a>
+                  </h2>
+                  <Tags item={item} />
+                  {item.description}
+                </li>
+              ))}
+            </ul>
+          </Fade>
         </Tiles>
 
         <Divider />
       </main>
-
-      <Footer />
     </div>
   );
 };
