@@ -13,7 +13,6 @@ export default class App extends NextApp {
       <ThemeProvider theme={theme}>
         <Header />
         <Component {...pageProps} />
-        <Footer />
       </ThemeProvider>
     );
   }

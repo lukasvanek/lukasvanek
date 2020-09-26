@@ -53,6 +53,7 @@ const experiments = [
   },
   {
     title: 'Soundcloud Clusters',
+    link: '/project/neo4j',
     tags: ['Neo4j'],
     description: 'Visualizing relationships of Sondcloud users using Neo4j',
   },
