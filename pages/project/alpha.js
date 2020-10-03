@@ -21,11 +21,14 @@ export default () => {
       >
         <Divider />
 
-        <h2>Rosso Solutions</h2>
-        <p>Platform for no-code development</p>
+        <h2>Alpha Analytics</h2>
+        <p>Stock picker, custom market indicators & insights</p>
 
         <Fade>
-          <img src="/rosso.png" />
+          <img src="/alpha1.png" />
+        </Fade>
+        <Fade>
+          <img src="/alpha2.png" />
         </Fade>
 
         <Divider />

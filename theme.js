@@ -2,6 +2,7 @@ import { darken, lighten } from '@theme-ui/color';
 
 const theme = {
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
+  fontSizes: [9, 12, 14, 16, 20, 24, 32, 48, 64],
   colors: {
     text: '#000',
     background: '#f7f7f7',
@@ -38,15 +39,21 @@ const theme = {
   },
   buttons: {
     primary: {
+      my: 2,
+      mr: 2,
+      py: 1,
+      pl: '1.3em',
+      pr: '1.1em',
+      fontSize: 1,
+      letterSpacing: '.2em',
       fontFamily: 'body',
       borderRadius: 999,
       outline: 'none',
       cursor: 'pointer',
       fontWeight: '400',
       transition: 'all 140ms ease-in-out',
-      ':hover': {
-        backgroundColor: darken('primary', 0.1),
-      },
+      backgroundColor: 'text',
+      color: 'background',
       ':active': {
         outline: 'none',
         transform: 'scale(0.85)',

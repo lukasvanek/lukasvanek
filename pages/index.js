@@ -6,29 +6,32 @@ import Fade from 'react-reveal/Fade';
 
 const projects = [
   {
+    title: 'Rosso Solutions',
+    link: '/project/rosso',
+    tags: ['React', 'Rematch', 'MongoDB'],
+    visit: 'https://rosso.solutions',
+    visitBg:
+      'linear-gradient(48deg, rgb(180, 58, 129) 0%, rgb(199, 0, 0) 100%)',
+    description: 'Platform for no-code development',
+  },
+  {
     title: 'Dinify',
     link: '/project/dinify',
-    tags: ['Typescript', 'React Native Web', 'RxJS', 'NestJS'],
+    tags: ['React Native', 'RxJS', 'NestJS'],
     description:
       'Smart dining platform for restaurants and their international guests',
   },
   {
     title: 'Dinify Growth Hacking',
     link: '/project/dinify-campaign',
-    tags: ['Scraping', 'MongoDB'],
+    tags: ['Sendgrid', 'MongoDB', 'CharlesProxy'],
     description:
       'Using TripAdvisor platform to target our clients in onboarding campaign',
   },
   {
-    title: 'Rosso Solutions',
-    link: '/project/rosso',
-    tags: ['React', 'Rematch', 'SVG', 'MongoDB'],
-    description: 'Platform for no-code development',
-  },
-  {
     title: 'Sinesquare',
     link: '/project/sinesquare',
-    tags: ['React', 'PHP', 'Nette', 'Angular', 'Redux', 'RxJS', 'MongoDB'],
+    tags: ['React', 'Nette', 'Angular', 'Redux'],
     description: 'Connecting people with similar taste in music',
   },
 ];
@@ -36,7 +39,10 @@ const projects = [
 const experiments = [
   {
     title: 'Alpha Analytics',
-    tags: ['Scraping', 'React', 'GraphQL'],
+    link: '/project/alpha',
+    visit: 'https://alpha.lukasvanek.com',
+    visitBg: 'linear-gradient(48deg, rgb(0, 0, 255) 0%, rgb(0, 100, 255) 100%)',
+    tags: ['React', 'GraphQL', 'Apollo'],
     description: 'Stock picker, custom market indicators & insights',
   },
   {
@@ -86,6 +92,37 @@ const Tags = ({ item }) => {
   );
 };
 
+const Item = ({ item }) => {
+  return (
+    <li key={`tile-${item.title}`}>
+      <h2>
+        <Link href={item.link || '/'}>
+          <a>{item.title}</a>
+        </Link>
+      </h2>
+      <Tags item={item} />
+      <div>{item.description}</div>
+      {!!item.link && (
+        <Link href={item.link}>
+          <Button>MORE</Button>
+        </Link>
+      )}
+      {!!item.visit && (
+        <a href={item.visit} target="_blank">
+          <Button
+            sx={{
+              color: 'white',
+              background: item.visitBg,
+            }}
+          >
+            VISIT
+          </Button>
+        </a>
+      )}
+    </li>
+  );
+};
+
 export default () => {
   return (
     <div sx={{ variant: 'styles' }}>
@@ -101,15 +138,7 @@ export default () => {
           <Fade>
             <ul>
               {projects.map((item) => (
-                <li key={`tile-${item.title}`}>
-                  <h2>
-                    <Link href={item.link || '/'}>
-                      <a>{item.title}</a>
-                    </Link>
-                  </h2>
-                  <Tags item={item} />
-                  {item.description}
-                </li>
+                <Item item={item} key={`tile-${item.title}`} />
               ))}
             </ul>
           </Fade>
@@ -122,13 +151,7 @@ export default () => {
           <Fade>
             <ul>
               {experiments.map((item) => (
-                <li key={`tile-${item.title}`}>
-                  <h2>
-                    <a href={item.link}>{item.title}</a>
-                  </h2>
-                  <Tags item={item} />
-                  {item.description}
-                </li>
+                <Item item={item} key={`tile-${item.title}`} />
               ))}
             </ul>
           </Fade>
@@ -136,6 +159,7 @@ export default () => {
 
         <Divider />
       </main>
+      <Footer />
     </div>
   );
 };

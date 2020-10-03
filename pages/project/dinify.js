@@ -17,7 +17,7 @@ export default () => {
         variant: 'styles',
       }}
     >
-      <Parallax pages={3.5}>
+      <Parallax pages={3.7}>
         <main
           sx={{
             a: {
@@ -120,7 +120,7 @@ export default () => {
                   order to save the project we tried to adapt to different
                   market once again, the restaurants of Seoul.
                 </p>
-                <div sx={{ width: 550, height: 550, mx: 'auto' }}>
+                <div sx={{ width: 550, height: 550, mt: 100, mx: 'auto' }}>
                   <Tweet
                     tweetId="1124282805427605505"
                     options={{ theme: colorMode }}
@@ -130,7 +130,7 @@ export default () => {
             </Fade>
 
             <Fade>
-              <div className="container" sx={{ mt: 100 }}>
+              <div className="container" sx={{ mt: 160, mb: 60 }}>
                 <h3>My role</h3>
                 <p>
                   The first thing I was working on was developing web app for
@@ -138,7 +138,7 @@ export default () => {
                   <a href="https://redux-observable.js.org/" target="_blank">
                     Observables
                   </a>{' '}
-                  and{' '}
+                  , Ramda and{' '}
                   <a href="https://styled-components.com/" target="_blank">
                     styled-components
                   </a>{' '}
@@ -195,7 +195,6 @@ export default () => {
               </div>
             </Fade>
 
-            <Divider />
             <Footer />
           </ParallaxLayer>
         </main>
